@@ -7,7 +7,7 @@ const [usersList , setUsersList] = useState([]);
 
 const addSubmitHandler = (uName , uAge) => {
   setUsersList((prevUserList) => {
-    return [...prevUserList , {name:uName , age:uAge}]
+    return [...prevUserList , {name:uName , age:uAge ,  id: Math.random().toString()}]
 });
 }
 
